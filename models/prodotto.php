@@ -6,15 +6,15 @@ class Prodotto
     private $immagine;
     private $titolo;
     private $prezzo;
-    private $icona;
+    private $animale;
 
-    public function __construct($articolo, $immagine, $titolo, $prezzo, $icona)
+    public function __construct($articolo, $immagine, $titolo, $prezzo, $animale)
     {
         $this->setarticolo($articolo);
         $this->setimmagine($immagine);
         $this->settitolo($titolo);
         $this->setprezzo($prezzo);
-        $this->seticona($icona);
+        $this->setAnimale($animale);
     }
 
 
@@ -62,14 +62,14 @@ class Prodotto
         $this->prezzo = $prezzo;
     }
 
-    public function geticona()
+    public function getAnimale()
     {
 
-        return $this->icona;
+        return $this->animale;
     }
-    public function seticona($icona)
+    public function setAnimale($animale)
     {
 
-        $this->icona = $icona;
+        $this->animale = $animale;
     }
 }

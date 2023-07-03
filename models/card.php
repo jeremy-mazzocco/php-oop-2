@@ -1,30 +1,32 @@
 <?php
 
+require_once("./models/prodotto.php");
+
 class Card extends Prodotto
 {
 
-    private Animale $animale;
+    private Dettagli $dettagli;
 
     public function __construct(
         $articolo,
         $immagine,
         $titolo,
         $prezzo,
-        $icona,
-        Animale $animale
+        $animale,
+        Dettagli $dettagli
     ) {
 
-        parent::__construct($articolo, $immagine, $titolo, $prezzo, $icona);
+        parent::__construct($articolo, $immagine, $titolo, $prezzo, $animale);
 
-        $this->setAnimale($animale);
+        $this->setDettagli($dettagli);
     }
 
-    public function getAnimale()
+    public function getdettagli()
     {
-        return $this->animale;
+        return $this->dettagli;
     }
-    public function setAnimale($animale)
+    public function setDettagli($dettagli)
     {
-        $this->animale = $animale;
+        $this->dettagli = $dettagli;
     }
 }

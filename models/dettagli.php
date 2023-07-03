@@ -1,6 +1,6 @@
 <?php
 
-class Animale
+class Dettagli
 {
     private $tipo;
 
