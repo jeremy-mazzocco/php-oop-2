@@ -39,7 +39,6 @@
             </li>
         </ul>
 
-
         <ul>
             <li>
                 Articolo: <?php echo  $osso->getarticolo() ?>
@@ -63,7 +62,6 @@
                 Peso: <?php echo  $osso->getWeight() ?> kg
             </li>
         </ul>
-
 
         <ul>
             <li>
@@ -89,7 +87,6 @@
             </li>
         </ul>
 
-
         <ul>
             <li>
                 Articolo: <?php echo  $rimuoviPeli->getarticolo() ?>
@@ -113,7 +110,6 @@
                 Peso: <?php echo  $rimuoviPeli->getWeight() ?> kg
             </li>
         </ul>
-
 
         <ul>
             <li>
@@ -141,10 +137,6 @@
     </div>
 
 </body>
-
-<script>
-
-</script>
 
 
 </html>

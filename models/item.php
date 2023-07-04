@@ -37,10 +37,8 @@ class Item extends Prodotto
 }
 
 
-
 trait Weight
 {
-
     private $weight;
 
     public function getWeight()
