@@ -4,6 +4,7 @@ require_once("./models/prodotto.php");
 
 class Item extends Prodotto
 {
+    use Weight;
 
     private Dettagli $dettagli;
 
@@ -13,12 +14,15 @@ class Item extends Prodotto
         $titolo,
         $prezzo,
         $animale,
-        Dettagli $dettagli
+        Dettagli $dettagli,
+        $weight
     ) {
 
         parent::__construct($articolo, $immagine, $titolo, $prezzo, $animale);
 
         $this->setDettagli($dettagli);
+
+        $this->setWeight($weight);
     }
 
     public function getdettagli()
@@ -34,7 +38,7 @@ class Item extends Prodotto
 
 
 
-trait Weightable
+trait Weight
 {
 
     private $weight;
@@ -46,11 +50,6 @@ trait Weightable
     }
     public function setWeight($weight)
     {
-
-        if ($weight <= 0) {
-
-            throw new Exception("Weight can't be negative");
-        }
 
         $this->weight = $weight;
     }

@@ -34,6 +34,9 @@
             <li>
                 Materiale: <?php echo  $cuccia->getdettagli()->getTipo() ?>
             </li>
+            <li>
+                Peso: <?php echo  $cuccia->getWeight() ?> kg
+            </li>
         </ul>
 
 
@@ -55,6 +58,9 @@
             </li>
             <li>
                 Materiale: <?php echo  $osso->getdettagli()->getTipo() ?>
+            </li>
+            <li>
+                Peso: <?php echo  $osso->getWeight() ?> kg
             </li>
         </ul>
 
@@ -78,6 +84,9 @@
             <li>
                 Materiale: <?php echo  $crocchette->getdettagli()->getTipo() ?>
             </li>
+            <li>
+                Peso: <?php echo  $crocchette->getWeight() ?> kg
+            </li>
         </ul>
 
 
@@ -100,6 +109,9 @@
             <li>
                 Materiale: <?php echo  $rimuoviPeli->getdettagli()->getTipo() ?>
             </li>
+            <li>
+                Peso: <?php echo  $rimuoviPeli->getWeight() ?> kg
+            </li>
         </ul>
 
 
@@ -121,6 +133,9 @@
             </li>
             <li>
                 Materiale: <?php echo  $lettiera->getdettagli()->getTipo() ?>
+            </li>
+            <li>
+                Peso: <?php echo  $lettiera->getWeight() ?> kg
             </li>
         </ul>
     </div>

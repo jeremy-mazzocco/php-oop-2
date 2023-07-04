@@ -64,7 +64,7 @@ class Prodotto
     public function setprezzo($prezzo)
     {
 
-        if ($prezzo < 0) {
+        if ($prezzo <= 0) {
             throw new Exception("Il prezzo non puo' essere zero");
         }
 
