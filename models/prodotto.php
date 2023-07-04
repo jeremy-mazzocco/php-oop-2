@@ -26,6 +26,11 @@ class Prodotto
     public function setarticolo($articolo)
     {
 
+        if (strlen($articolo) < 1) {
+
+            throw new Exception("L'articolo deve avere un nome");
+        }
+
         $this->articolo = $articolo;
     }
 
@@ -58,6 +63,10 @@ class Prodotto
     }
     public function setprezzo($prezzo)
     {
+
+        if ($prezzo < 0) {
+            throw new Exception("Il prezzo non puo' essere zero");
+        }
 
         $this->prezzo = $prezzo;
     }
