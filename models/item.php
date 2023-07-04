@@ -2,7 +2,7 @@
 
 require_once("./models/prodotto.php");
 
-class Card extends Prodotto
+class Item extends Prodotto
 {
 
     private Dettagli $dettagli;
