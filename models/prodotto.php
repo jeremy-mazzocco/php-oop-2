@@ -23,6 +23,7 @@ class Prodotto
 
         return $this->articolo;
     }
+
     public function setarticolo($articolo)
     {
 
@@ -39,6 +40,7 @@ class Prodotto
 
         return $this->immagine;
     }
+
     public function setimmagine($immagine)
     {
 
@@ -50,6 +52,7 @@ class Prodotto
 
         return $this->titolo;
     }
+
     public function settitolo($titolo)
     {
 
@@ -61,6 +64,7 @@ class Prodotto
 
         return $this->prezzo;
     }
+
     public function setprezzo($prezzo)
     {
 
@@ -76,6 +80,7 @@ class Prodotto
 
         return $this->animale;
     }
+    
     public function setAnimale($animale)
     {
 
