@@ -29,13 +29,12 @@ class Item extends Prodotto
     {
         return $this->dettagli;
     }
+
     public function setDettagli($dettagli)
     {
-
         $this->dettagli = $dettagli;
     }
 }
-
 
 trait Weight
 {

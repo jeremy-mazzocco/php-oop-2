@@ -13,6 +13,7 @@ class Dettagli
     {
         return $this->tipo;
     }
+    
     public function setTipo($tipo)
     {
         $this->tipo = $tipo;

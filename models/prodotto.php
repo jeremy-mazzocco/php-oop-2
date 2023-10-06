@@ -17,7 +17,6 @@ class Prodotto
         $this->setAnimale($animale);
     }
 
-
     public function getarticolo()
     {
 
@@ -80,7 +79,7 @@ class Prodotto
 
         return $this->animale;
     }
-    
+
     public function setAnimale($animale)
     {
 
